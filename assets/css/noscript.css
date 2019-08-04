@@ -6,6 +6,7 @@
 
 /* Spotlights */
 
+
 	.spotlights > section > .image:before {
 		opacity: 0 !important;
 	}
