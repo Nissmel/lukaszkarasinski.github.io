@@ -32,6 +32,10 @@ footer, header, hgroup, menu, nav, section {
 	
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 @keyframes gradientBG {
 	0% {
 		background-position: 0% 50%;
