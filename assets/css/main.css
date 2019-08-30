@@ -27,6 +27,29 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+	
+	body {
+	
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container {
+	width: 100%;
+	position: absolute;
+	top: -50%;}
+
+	
 
 body {
 	line-height: 1;
@@ -115,8 +138,8 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
-		font-family: Arial, Helvetica, sans-serif;
+		color: rgba(0, 0, 0, 0.7);
+		font-family: "Exo", sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
@@ -154,6 +177,7 @@ input, select, textarea {
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
 		color: inherit;
 		text-decoration: none;
+		font-size: 1.2em;
 	}
 
 		a:hover {
@@ -171,15 +195,22 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 2em 0px;
+	}
+	
+	p1 {
+		margin: 0 0 2em 0px;
+		color: #f1f1f1;
+		font-size: 1.5em;
+
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #313131;
 		font-weight: bold;
 		line-height: 1.5;
-		margin: 0 0 0.5em 0;
-		text-shadow: 2px 2px 5px #000000;
+		margin: 0 0 0.5em 0px;
+		text-shadow: 1px 1px 1px #212121;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -188,7 +219,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2.75em;
+		font-size: 3.75em;
 	}
 
 		h1.major {
@@ -217,6 +248,7 @@ input, select, textarea {
 
 	h2 {
 		font-size: 1.75em;
+		margin: 0 0 0.5em 0px;
 	}
 
 	h3 {
@@ -286,7 +318,7 @@ input, select, textarea {
 		background: rgba(255, 255, 255, 0.05);
 		border-radius: 0.25em;
 		border: solid 1px rgba(255, 255, 255, 0.15);
-		font-family: "Courier New", monospace;
+		font-family: "Exo", sans-serif;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -294,7 +326,7 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: "Exo", sans-serif;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -1833,13 +1865,14 @@ input, select, textarea {
 		-ms-transition: border-color 0.2s ease;
 		transition: border-color 0.2s ease;
 		background-color: transparent;
-		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border: solid 2px !important;
+		text-shadow: 1px 1px 1px #464646;
+		border-color: rgba(0, 0, 0, 0.25) !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: #000000 !important;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.6em;
+		font-size: 0.7em;
 		font-weight: bold;
 		height: calc(4.75em + 2px);
 		letter-spacing: 0.25em;
@@ -1989,7 +2022,7 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border-radius: 0.25em;
-		border: solid 1px rgba(255, 255, 255, 0.15);
+		border: solid 1px rgba(0, 0, 0, 0.35);
 		background: rgba(255, 255, 255, 0.05);
 		margin: 0 0 2em 0;
 	}
@@ -1997,7 +2030,7 @@ input, select, textarea {
 		.features section {
 			padding: 3.5em 3em 1em 7em ;
 			width: 50%;
-			border-top: solid 1px rgba(255, 255, 255, 0.15);
+			border-top: solid 1px rgba(0, 0, 0, 0.35);
 			position: relative;
 		}
 
@@ -2006,7 +2039,7 @@ input, select, textarea {
 			}
 
 			.features section:nth-child(2n) {
-				border-left: solid 1px rgba(255, 255, 255, 0.15);
+				    border-left: solid 1px rgba(0, 0, 0, 0.35);
 			}
 
 			.features section .icon {
@@ -2420,7 +2453,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				font-family: "Exo", sans-serif;
 				font-weight: 900;
 			}
 
@@ -2502,6 +2535,7 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+			font-size: 2.1em;
 		}
 
 		.icon > .label {
@@ -2524,9 +2558,9 @@ input, select, textarea {
 			width: 2.5em;
 			height: 2.5em;
 			display: block;
-			background: #ffffff;
+			background: #262626;
 			border-radius: 100%;
-			color: #312450;
+			color: #262626;
 			text-align: center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
@@ -2553,7 +2587,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
+					color: #f2f2f2;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -2908,7 +2942,6 @@ input, select, textarea {
 
 		.split > :nth-child(2n - 1) {
 			padding-right: 2.5em;
-			border-right: solid 1px rgba(255, 255, 255, 0.15);
 		}
 
 		.split > :nth-child(2n) {
@@ -3242,7 +3275,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #395273;
+			background-color: #4e8978;
 		}
 
 		.wrapper.style1-alt {
@@ -3250,7 +3283,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #30596B;
+			background-color: #52907e;
 		}
 
 		.wrapper.style2-alt {
@@ -3258,7 +3291,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #3E738A;
+			background-color: #f1f1f1;
 		}
 
 		.wrapper.style3-alt {
@@ -3526,7 +3559,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #070d2d;
+		background: #0D0D0D;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3763,14 +3796,14 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: #403F3E;
 			}
 
 			#sidebar nav a:after {
 				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: linear-gradient(to right, #6b344e, #0D0D0D);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3875,15 +3908,18 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background-attachment: fixed;
-		background-image: url("images/bg.jpeg");
-		background-position: top right;
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: ##f1f1f1;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 10s ease infinite;
 	}
 
 		#intro p {
-			font-size: 1.25em;
+			font-size: 2.25em;
 			text-shadow: 1px 1px 3px #000000;
 		}
 
