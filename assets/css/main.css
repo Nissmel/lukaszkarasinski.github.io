@@ -3241,8 +3241,8 @@ input, select, textarea {
 	}
 
 		.wrapper > .inner {
-			padding: 5em 5em 3em 5em ;
-			max-width: 100%;
+			padding: 5em 5em 3em 5em;
+			max-width: 90%;
 			width: 75em;
 		}
 
