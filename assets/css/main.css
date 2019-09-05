@@ -32,10 +32,6 @@ footer, header, hgroup, menu, nav, section {
 	
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 @keyframes gradientBG {
 	0% {
 		background-position: 0% 50%;
@@ -53,14 +49,24 @@ footer, header, hgroup, menu, nav, section {
 	position: absolute;
 	top: -50%;}
 
-	
+::-webkit-scrollbar {
+    display: none;
+}
 
 body {
 	line-height: 1;
+	background-color: #23a6d5;
 }
 
 ol, ul {
-	list-style: none;
+  list-style: none;
+}
+
+.TechUL{
+	position: relative;
+	top: -30px;
+	list-style-type: circle;
+    margin: 0 0 -1.5em 0;
 }
 
 blockquote, q {
@@ -137,6 +143,8 @@ input, select, textarea {
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
+			
+
 		}
 
 /* Type */
@@ -2032,18 +2040,18 @@ input, select, textarea {
 	}
 
 		.features section {
-			padding: 3.5em 3em 1em 7em ;
-			width: 50%;
-			border-top: solid 1px rgba(0, 0, 0, 0.35);
+			padding: 2em 2em 0em 9em ;
+			boorder-top: solid 1px rgba(0, 0, 0, 0.35);
 			position: relative;
+			text-shadow: 1px 1px 1px #afafaf;
 		}
 
 			.features section:nth-child(-n + 2) {
-				border-top-width: 0;
+				boorder-top-width: 0;
 			}
 
 			.features section:nth-child(2n) {
-				    border-left: solid 1px rgba(0, 0, 0, 0.35);
+				    boorder-left: solid 1px rgba(0, 0, 0, 0.35);
 			}
 
 			.features section .icon {
@@ -2061,7 +2069,7 @@ input, select, textarea {
 				transform: scale(1);
 				position: absolute;
 				left: 3em;
-				top: 3em;
+				top: 1.8em;
 				opacity: 1;
 			}
 
@@ -3246,7 +3254,7 @@ input, select, textarea {
 
 		.wrapper > .inner {
 			padding: 5em 5em 3em 5em;
-			max-width: 90%;
+			max-width: 80%;
 			width: 75em;
 		}
 
@@ -3948,5 +3956,8 @@ input, select, textarea {
 			#intro {
 				background-attachment: scroll;
 			}
+			
+			
+
 
 		}
