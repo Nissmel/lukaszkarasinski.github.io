@@ -3582,7 +3582,6 @@ input, select, textarea {
 		top: 0;
 		width: 18em;
 		z-index: 10000;
-		box-shadow: 4px 0px 20px #808080;
 	}
 
 		#sidebar > .inner {
