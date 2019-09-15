@@ -3925,7 +3925,7 @@ input, select, textarea {
 	height: 100vh;
 	font-family: "Exo", sans-serif;
 	color: ##f1f1f1;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	linear-gradient(-231deg, #96D9D9, #5EBFBF, #499CA6, #1F6A73, #0C3640);
 	background-size: 400% 400%;
 	animation: gradientBG 10s ease infinite;
 	}
